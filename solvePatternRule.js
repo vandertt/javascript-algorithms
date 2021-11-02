@@ -1,44 +1,3 @@
-const addToUp = (n) => {
-  let total = 0;
-  for (var i = 1; i <= n; i++) {
-    total += i;
-  }
-  return total;
-};
-
-const addToUpFast = (n) => {
-  return (n * (n + 1)) / 2;
-};
-
-const logAtLeast5 = (n) => {
-  for (var i = 1; i <= Math.max(5, n); i++) {
-    console.log(i);
-  }
-};
-
-const logAtLeastFast = (n) => {
-  return (n * Math.max(5, n)) / n;
-};
-
-function sum(arr) {
-  let result = 1;
-  for (let i = 1; i <= arr.length; i++) {
-    result += arr[i];
-  }
-  return result;
-}
-
-function multipleSumToArray(arr) {
-  let newArray = [];
-  let total = 0;
-  for (let i = 0; i < arr.length; i++) {
-    newArray.push(2 * arr[i]);
-    total += newArray[i];
-  }
-  return newArray;
-  // return total;
-}
-
 const frequancyCount = (array1, array2) => {
   if (array1.length != array2.length) {
     return false;
@@ -91,7 +50,6 @@ const validString = (first, second) => {
   }
   return true;
 };
-
 let sumValue = (arr) => {
   let left = 0;
   let right = arr.length - 1;
@@ -149,8 +107,3 @@ const maxSum = (array, number) => {
   }
   return maxSum;
 };
-
-let num = [2, 5, 2, 3, 5, 7, 8];
-let condition = 3;
-
-console.log(maxSum(num, 3));
