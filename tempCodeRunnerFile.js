@@ -1,1 +1,1 @@
-;
+console.log(binarySearch_(number, 18));
